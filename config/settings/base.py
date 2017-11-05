@@ -116,11 +116,7 @@ MANAGERS = ADMINS
 #default='postgres://postgres:1234@127.0.0.1:5432/nomadgram'
 
 DATABASES = {
-<<<<<<< HEAD
     'default': env.db('DATABASE_URL', default='postgres://postgres:1234@127.0.0.1:5432/nomadgram')
-=======
-    'default': env.db('DATABASE_URL', default='postgres:///nomadgram')
->>>>>>> d353aa717951e34b891a7e96855086eb9b620258
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
