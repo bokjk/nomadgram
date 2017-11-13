@@ -39,7 +39,7 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 
     # Useful template tags:
-    'django.contrib.humanize',
+    #'django.contrib.humanize',
 
     # Admin
     'django.contrib.admin',
@@ -48,6 +48,7 @@ THIRD_PARTY_APPS = [
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
+    'rest_framework', # REST framework
 ]
 
 # Apps specific for this project go here.
@@ -117,6 +118,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': env.db('DATABASE_URL', default='postgres://postgres:1234@127.0.0.1:5432/nomadgram')
+                                              #postgres://ID:PW@IP:PORT/DATABASE_NAME
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
