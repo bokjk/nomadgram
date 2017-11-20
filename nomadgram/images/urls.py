@@ -14,7 +14,7 @@ urlpatterns = [
     ),
     url(
         regex=r'^likes/$',
-        view=views.LIstAllLikes.as_view(),
-        name='all_likes',
+        view=views.ListAllLikes.as_view(),
+        name='all_likes', 
     ),
 ]
